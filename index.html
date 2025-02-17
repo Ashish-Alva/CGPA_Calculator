@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGPA Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>SGPA Calculator <br>(5th sem ECE)</h2>
+        <div id="subjects">
+            <div class="subject"><label>BEC501:</label> <input type="number" class="marks" placeholder="Enter marks  (out of 100)" min="0" max="99" oninput="validateInput(this)"></div>
+            <div class="subject"><label>BEC502:</label> <input type="number" class="marks" placeholder="Enter marks" min="0" max="99" oninput="validateInput(this)"></div>
+            <div class="subject"><label>BEC503:</label> <input type="number" class="marks" placeholder="Enter marks" min="0" max="99" oninput="validateInput(this)"></div>
+            <div class="subject"><label>BECL504:</label> <input type="number" class="marks" placeholder="Enter marks" min="0" max="99" oninput="validateInput(this)"></div>
+            <div class="subject"><label>BEC586:</label> <input type="number" class="marks" placeholder="Enter marks" min="0" max="99" oninput="validateInput(this)"></div>
+            <div class="subject"><label>BRMK557:</label> <input type="number" class="marks" placeholder="Enter marks" min="0" max="99" oninput="validateInput(this)"></div>
+            <div class="subject"><label>BESK508:</label> <input type="number" class="marks" placeholder="Enter marks" min="0" max="99" oninput="validateInput(this)"></div>
+            <div class="subject"><label>BEC515C:</label> <input type="number" class="marks" placeholder="Enter marks" min="0" max="99" oninput="validateInput(this)"></div>
+        </div>
+        
+
+
+        <button onclick="calculateCGPA()">Calculate SGPA</button>
+        <h3 id="result"></h3>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
