@@ -25,6 +25,8 @@ function convertToGrade(marks) {
     if (marks >= 45) return 5;
     if (marks >= 40) return 4;
     if (marks >= 30) return 3;
+    if (marks >= 20) return 2;
+    if (marks >= 10) return 1;
     return 0;
 }
 
