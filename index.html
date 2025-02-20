@@ -7,25 +7,102 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h2>SGPA Calculator <br>(5th sem ECE)</h2>
-        <div id="subjects">
-            <div class="subject"><label>BEC501:</label> <input type="number" class="marks" placeholder="Enter marks  (out of 100)" min="0" max="99" oninput="validateInput(this)"></div>
-            <div class="subject"><label>BEC502:</label> <input type="number" class="marks" placeholder="Enter marks" min="0" max="99" oninput="validateInput(this)"></div>
-            <div class="subject"><label>BEC503:</label> <input type="number" class="marks" placeholder="Enter marks" min="0" max="99" oninput="validateInput(this)"></div>
-            <div class="subject"><label>BECL504:</label> <input type="number" class="marks" placeholder="Enter marks" min="0" max="99" oninput="validateInput(this)"></div>
-            <div class="subject"><label>BEC586:</label> <input type="number" class="marks" placeholder="Enter marks" min="0" max="99" oninput="validateInput(this)"></div>
-            <div class="subject"><label>BRMK557:</label> <input type="number" class="marks" placeholder="Enter marks" min="0" max="99" oninput="validateInput(this)"></div>
-            <div class="subject"><label>BESK508:</label> <input type="number" class="marks" placeholder="Enter marks" min="0" max="99" oninput="validateInput(this)"></div>
-            <div class="subject"><label>BEC515C:</label> <input type="number" class="marks" placeholder="Enter marks" min="0" max="99" oninput="validateInput(this)"></div>
-        </div>
+    
+        <h1>CGPA-Calculator <br>(ECE-2022) </h1>
+
         
 
-
-        <button onclick="calculateCGPA()">Calculate SGPA</button>
-        <h3 id="result"></h3>
-    </div>
     
+
+    <div class="container">
+
+        <div class="container_grid sem1">
+            <h2>1st Sem</h2>
+            <div id="subjects">
+                <div class="subject"><label>BMATE101:</label> <input type="number" class="marks" placeholder="Enter marks  (out of 100)" min="0" max="99" oninput="validateInput(this)"></div>
+                <div class="subject"><label>BPHYE102:</label> <input type="number" class="marks" placeholder="Enter marks" min="0" max="99" oninput="validateInput(this)"></div>
+                <div class="subject"><label>BBEE103:</label> <input type="number" class="marks" placeholder="Enter marks" min="0" max="99" oninput="validateInput(this)"></div>
+                <div class="subject"><label>BENGK106:</label> <input type="number" class="marks" placeholder="Enter marks" min="0" max="99" oninput="validateInput(this)"></div>
+                <div class="subject"><label>BKSKK107:</label> <input type="number" class="marks" placeholder="Enter marks" min="0" max="99" oninput="validateInput(this)"></div>
+                <div class="subject"><label>BIDTK158:</label> <input type="number" class="marks" placeholder="Enter marks" min="0" max="99" oninput="validateInput(this)"></div>
+                <div class="subject"><label>BETCK105E:</label> <input type="number" class="marks" placeholder="Enter marks" min="0" max="99" oninput="validateInput(this)"></div>
+                <div class="subject"><label>BESCK104E:</label> <input type="number" class="marks" placeholder="Enter marks" min="0" max="99" oninput="validateInput(this)"></div>
+            </div>
+            <button onclick="calculateSGPA(1)">Calculate SGPA</button>
+            <h3 id="result1"></h3>
+        </div>
+
+        <div class="container_grid sem2">
+            <h2>2nd Sem</h2>
+            <div id="subjects">
+                <div class="subject"><label>BMATE201:</label> <input type="number" class="marks" placeholder="Enter marks  (out of 100)" min="0" max="99" oninput="validateInput(this)"></div>
+                <div class="subject"><label>BCHEE202:</label> <input type="number" class="marks" placeholder="Enter marks" min="0" max="99" oninput="validateInput(this)"></div>
+                <div class="subject"><label>BCEDK203:</label> <input type="number" class="marks" placeholder="Enter marks" min="0" max="99" oninput="validateInput(this)"></div>
+                <div class="subject"><label>BPWSK206:</label> <input type="number" class="marks" placeholder="Enter marks" min="0" max="99" oninput="validateInput(this)"></div>
+                <div class="subject"><label>BICOK207:</label> <input type="number" class="marks" placeholder="Enter marks" min="0" max="99" oninput="validateInput(this)"></div>
+                <div class="subject"><label>BSFHK258:</label> <input type="number" class="marks" placeholder="Enter marks" min="0" max="99" oninput="validateInput(this)"></div>
+                <div class="subject"><label>BPLCK205A:</label> <input type="number" class="marks" placeholder="Enter marks" min="0" max="99" oninput="validateInput(this)"></div>
+                <div class="subject"><label>BESCK204B:</label> <input type="number" class="marks" placeholder="Enter marks" min="0" max="99" oninput="validateInput(this)"></div>
+            </div>
+            <button onclick="calculateSGPA(2)">Calculate SGPA</button>
+            <h3 id="result2"></h3>
+        </div>
+
+        <div class="container_grid sem3">
+            <h2>3rd Sem</h2>
+            <div id="subjects">
+                <div class="subject"><label>BMATEC301:</label> <input type="number" class="marks" placeholder="Enter marks  (out of 100)" min="0" max="99" oninput="validateInput(this)"></div>
+                <div class="subject"><label>BEC302:</label> <input type="number" class="marks" placeholder="Enter marks" min="0" max="99" oninput="validateInput(this)"></div>
+                <div class="subject"><label>BEC303:</label> <input type="number" class="marks" placeholder="Enter marks" min="0" max="99" oninput="validateInput(this)"></div>
+                <div class="subject"><label>BEC304:</label> <input type="number" class="marks" placeholder="Enter marks" min="0" max="99" oninput="validateInput(this)"></div>
+                <div class="subject"><label>BECL305:</label> <input type="number" class="marks" placeholder="Enter marks" min="0" max="99" oninput="validateInput(this)"></div>
+                <div class="subject"><label>BSCK307:</label> <input type="number" class="marks" placeholder="Enter marks" min="0" max="99" oninput="validateInput(this)"></div>
+                <div class="subject"><label>BEC358B:</label> <input type="number" class="marks" placeholder="Enter marks" min="0" max="99" oninput="validateInput(this)"></div>
+                <div class="subject"><label>BEC306C:</label> <input type="number" class="marks" placeholder="Enter marks" min="0" max="99" oninput="validateInput(this)"></div>
+            </div>
+            <button onclick="calculateSGPA(3)">Calculate SGPA</button>
+            <h3 id="result3"></h3>
+        </div>
+
+        <div class="container_grid sem4">
+            <h2>4th Sem</h2>
+            <div id="subjects">
+                <div class="subject"><label>BEC401:</label> <input type="number" class="marks" placeholder="Enter marks  (out of 100)" min="0" max="99" oninput="validateInput(this)"></div>
+                <div class="subject"><label>BEC402:</label> <input type="number" class="marks" placeholder="Enter marks" min="0" max="99" oninput="validateInput(this)"></div>
+                <div class="subject"><label>BEC403:</label> <input type="number" class="marks" placeholder="Enter marks" min="0" max="99" oninput="validateInput(this)"></div>
+                <div class="subject"><label>BECL404:</label> <input type="number" class="marks" placeholder="Enter marks" min="0" max="99" oninput="validateInput(this)"></div>
+                <div class="subject"><label>BBOK407:</label> <input type="number" class="marks" placeholder="Enter marks" min="0" max="99" oninput="validateInput(this)"></div>
+                <div class="subject"><label>BUHK408:</label> <input type="number" class="marks" placeholder="Enter marks" min="0" max="99" oninput="validateInput(this)"></div>
+                <div class="subject"><label>BECL456A:</label> <input type="number" class="marks" placeholder="Enter marks" min="0" max="99" oninput="validateInput(this)"></div>
+                <div class="subject"><label>BEC405A:</label> <input type="number" class="marks" placeholder="Enter marks" min="0" max="99" oninput="validateInput(this)"></div>
+            </div>
+            <button onclick="calculateSGPA(4)">Calculate SGPA</button>
+            <h3 id="result4"></h3>
+        </div>
+
+        <div class="container_grid sem5">
+            <h2>5th Sem</h2>
+            <div id="subjects">
+                <div class="subject"><label>BEC501:</label> <input type="number" class="marks" placeholder="Enter marks  (out of 100)" min="0" max="99" oninput="validateInput(this)"></div>
+                <div class="subject"><label>BEC502:</label> <input type="number" class="marks" placeholder="Enter marks" min="0" max="99" oninput="validateInput(this)"></div>
+                <div class="subject"><label>BEC503:</label> <input type="number" class="marks" placeholder="Enter marks" min="0" max="99" oninput="validateInput(this)"></div>
+                <div class="subject"><label>BECL504:</label> <input type="number" class="marks" placeholder="Enter marks" min="0" max="99" oninput="validateInput(this)"></div>
+                <div class="subject"><label>BEC586:</label> <input type="number" class="marks" placeholder="Enter marks" min="0" max="99" oninput="validateInput(this)"></div>
+                <div class="subject"><label>BRMK557:</label> <input type="number" class="marks" placeholder="Enter marks" min="0" max="99" oninput="validateInput(this)"></div>
+                <div class="subject"><label>BESK508:</label> <input type="number" class="marks" placeholder="Enter marks" min="0" max="99" oninput="validateInput(this)"></div>
+                <div class="subject"><label>BEC515C:</label> <input type="number" class="marks" placeholder="Enter marks" min="0" max="99" oninput="validateInput(this)"></div>
+            </div>
+            <button onclick="calculateSGPA(5)">Calculate SGPA</button>
+            <h3 id="result5"></h3>
+        </div>
+
+
+    </div>
+    <button onclick="calculateOverallCGPA()">Calculate Overall CGPA</button>
+    <h3 id="cgpaResult"></h3>
+
+    
+
 
     <script src="script.js"></script>
 </body>
